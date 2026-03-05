@@ -1,0 +1,48 @@
+.row{
+    display: flex;
+}
+#calc{
+    width: fit-content;
+    border: 3px solid black;
+    padding: 10px;
+}
+#clear, #delete{
+    width: 40%;
+    padding: 5px;
+    margin: 5px;
+}
+
+#row0{ 
+    justify-content: space-around;
+}
+.btn{
+    border: 1px solid black;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    
+}
+#res{
+    border: 2px solid black;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#curr{
+    font-size: 40px;
+    
+}
+#curr, #prev{margin: 5px;}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
