@@ -1,5 +1,10 @@
 let num=16;
 let dimension=960/num;
+let isDrawing=false;
+let global=document.querySelector("body");
+global.addEventListener("mousedown", (e)=>{e.preventDefault() ;isDrawing=true;})
+global.addEventListener("mouseup", ()=>{isDrawing=false;})
+
 btn=document.querySelector("button");
 btn.addEventListener("click", ()=>{
     let res=prompt("enter number of squares per side");
@@ -29,6 +34,7 @@ for (let row=0; row<num; row++){
         item.style.opacity='0.1';
         item.style.height=dimension+'px'; item.style.width=dimension+'px';
         item.addEventListener("mouseenter", (event)=>{
+            if (isDrawing)
             event.target.style.opacity=event.target.style.opacity*1.2;
         })
         myRow.appendChild(item);
