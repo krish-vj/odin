@@ -1,0 +1,38 @@
+#buttons{
+    display: flex;
+}
+#buttons > *{
+    margin: 10px;
+    height: 50px; 
+    width: 100px;
+    font-weight: bold;
+}
+#scoreContainer{
+    display: flex;
+}
+#hbox, #cbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px dashed black;
+    padding: 5px;
+}
+.scores{
+    font-weight: bold;
+    font-size: 40px;
+}
+#box{
+    border: 2px solid black;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justfiy-content: center;
+    align-items: center;
+    padding: 20px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
